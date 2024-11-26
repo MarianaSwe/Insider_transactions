@@ -1,0 +1,685 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0807.0327                               -->
+<workbook original-version='18.1' source-build='2024.2.2 (20242.24.0807.0327)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='stock_prices' inline='true' name='federated.1qwg29b15x37tr1aiot430jutmxo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='stock_prices' name='textscan.1u4pvxc0t71t201cxywcz0sd782b'>
+            <connection class='textscan' directory='C:/Users/maria/Desktop/csv_files' filename='stock_prices.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1u4pvxc0t71t201cxywcz0sd782b' name='stock_prices.csv' table='[stock_prices#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='TRANS_DATE' ordinal='1' />
+            <column datatype='string' name='ISSUERTRADINGSYMBOL' ordinal='2' />
+            <column datatype='real' name='TRANS_SHARES' ordinal='3' />
+            <column datatype='string' name='direction' ordinal='4' />
+            <column datatype='boolean' name='is_control' ordinal='5' />
+            <column datatype='string' name='ref_time' ordinal='6' />
+            <column datatype='real' name='return' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1u4pvxc0t71t201cxywcz0sd782b' name='stock_prices.csv' table='[stock_prices#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='TRANS_DATE' ordinal='1' />
+            <column datatype='string' name='ISSUERTRADINGSYMBOL' ordinal='2' />
+            <column datatype='real' name='TRANS_SHARES' ordinal='3' />
+            <column datatype='string' name='direction' ordinal='4' />
+            <column datatype='boolean' name='is_control' ordinal='5' />
+            <column datatype='string' name='ref_time' ordinal='6' />
+            <column datatype='real' name='return' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[stock_prices.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[stock_prices.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_prices.csv_335DF222B4394A4B8150243A1327E43C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TRANS_DATE</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[TRANS_DATE]</local-name>
+            <parent-name>[stock_prices.csv]</parent-name>
+            <remote-alias>TRANS_DATE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_prices.csv_335DF222B4394A4B8150243A1327E43C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISSUERTRADINGSYMBOL</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ISSUERTRADINGSYMBOL]</local-name>
+            <parent-name>[stock_prices.csv]</parent-name>
+            <remote-alias>ISSUERTRADINGSYMBOL</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_prices.csv_335DF222B4394A4B8150243A1327E43C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TRANS_SHARES</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TRANS_SHARES]</local-name>
+            <parent-name>[stock_prices.csv]</parent-name>
+            <remote-alias>TRANS_SHARES</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_prices.csv_335DF222B4394A4B8150243A1327E43C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>direction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[direction]</local-name>
+            <parent-name>[stock_prices.csv]</parent-name>
+            <remote-alias>direction</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_prices.csv_335DF222B4394A4B8150243A1327E43C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_control</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_control]</local-name>
+            <parent-name>[stock_prices.csv]</parent-name>
+            <remote-alias>is_control</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_prices.csv_335DF222B4394A4B8150243A1327E43C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ref_time</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ref_time]</local-name>
+            <parent-name>[stock_prices.csv]</parent-name>
+            <remote-alias>ref_time</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_prices.csv_335DF222B4394A4B8150243A1327E43C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>return</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[return]</local-name>
+            <parent-name>[stock_prices.csv]</parent-name>
+            <remote-alias>return</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_prices.csv_335DF222B4394A4B8150243A1327E43C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Issuertradingsymbol' datatype='string' name='[ISSUERTRADINGSYMBOL]' role='dimension' type='nominal' />
+      <column caption='Trans Date' datatype='date' name='[TRANS_DATE]' role='dimension' type='ordinal' />
+      <column caption='Trans Shares' datatype='real' name='[TRANS_SHARES]' role='measure' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[Trans Shares (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='6' formula='[TRANS_SHARES]' peg='0' size='1.16393e+06' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='stock_prices.csv' datatype='table' name='[__tableau_internal_object_id__].[stock_prices.csv_335DF222B4394A4B8150243A1327E43C]' role='measure' type='quantitative' />
+      <column caption='Direction' datatype='string' name='[direction]' role='dimension' type='nominal' />
+      <column caption='Is Control' datatype='boolean' name='[is_control]' role='dimension' type='nominal' />
+      <column caption='Ref Time' datatype='string' name='[ref_time]' role='dimension' type='nominal' />
+      <column caption='Return' datatype='real' name='[return]' role='measure' type='quantitative' />
+      <column-instance column='[direction]' derivation='None' name='[none:direction:nk]' pivot='key' type='nominal' />
+      <column-instance column='[is_control]' derivation='None' name='[none:is_control:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/maria/AppData/Local/Temp/TableauTemp/#TableauTemp_12hj1690a0mbxv146k4yi0f8sx4v.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/22/2024 03:16:48 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>stock_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17412</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_prices.csv_335DF222B4394A4B8150243A1327E43C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TRANS_DATE</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[TRANS_DATE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TRANS_DATE</remote-alias>
+              <ordinal>1</ordinal>
+              <family>stock_prices.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>66</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_prices.csv_335DF222B4394A4B8150243A1327E43C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ISSUERTRADINGSYMBOL</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ISSUERTRADINGSYMBOL]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ISSUERTRADINGSYMBOL</remote-alias>
+              <ordinal>2</ordinal>
+              <family>stock_prices.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>508</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_prices.csv_335DF222B4394A4B8150243A1327E43C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TRANS_SHARES</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TRANS_SHARES]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TRANS_SHARES</remote-alias>
+              <ordinal>3</ordinal>
+              <family>stock_prices.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1544</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_prices.csv_335DF222B4394A4B8150243A1327E43C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>direction</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[direction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>direction</remote-alias>
+              <ordinal>4</ordinal>
+              <family>stock_prices.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_prices.csv_335DF222B4394A4B8150243A1327E43C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_control</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[is_control]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_control</remote-alias>
+              <ordinal>5</ordinal>
+              <family>stock_prices.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_prices.csv_335DF222B4394A4B8150243A1327E43C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ref_time</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ref_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ref_time</remote-alias>
+              <ordinal>6</ordinal>
+              <family>stock_prices.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_prices.csv_335DF222B4394A4B8150243A1327E43C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>return</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[return]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>return</remote-alias>
+              <ordinal>7</ordinal>
+              <family>stock_prices.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5465</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[stock_prices.csv_335DF222B4394A4B8150243A1327E43C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:direction:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;P&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;S&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:is_control:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>false</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>true</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='stock_prices.csv' id='stock_prices.csv_335DF222B4394A4B8150243A1327E43C'>
+            <properties context=''>
+              <relation connection='textscan.1u4pvxc0t71t201cxywcz0sd782b' name='stock_prices.csv' table='[stock_prices#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='date' name='TRANS_DATE' ordinal='1' />
+                  <column datatype='string' name='ISSUERTRADINGSYMBOL' ordinal='2' />
+                  <column datatype='real' name='TRANS_SHARES' ordinal='3' />
+                  <column datatype='string' name='direction' ordinal='4' />
+                  <column datatype='boolean' name='is_control' ordinal='5' />
+                  <column datatype='string' name='ref_time' ordinal='6' />
+                  <column datatype='real' name='return' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{796776E4-72CB-49CA-A2B6-9B11A46B7769}' />
+    </worksheet>
+    <worksheet name='Stock perf (sell)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Stock Price Performance during and after Insider</run>
+            <run underline='true'> Sell</run>
+            <run> (n=1406)&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stock_prices' name='federated.1qwg29b15x37tr1aiot430jutmxo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qwg29b15x37tr1aiot430jutmxo'>
+            <column caption='Direction' datatype='string' name='[direction]' role='dimension' type='nominal' />
+            <column caption='Is Control' datatype='boolean' name='[is_control]' role='dimension' type='nominal' />
+            <column-instance column='[return]' derivation='Median' name='[med:return:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[direction]' derivation='None' name='[none:direction:nk]' pivot='key' type='nominal' />
+            <column-instance column='[is_control]' derivation='None' name='[none:is_control:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ref_time]' derivation='None' name='[none:ref_time:nk]' pivot='key' type='nominal' />
+            <column caption='Ref Time' datatype='string' name='[ref_time]' role='dimension' type='nominal' />
+            <column caption='Return' datatype='real' name='[return]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qwg29b15x37tr1aiot430jutmxo].[none:direction:nk]'>
+            <groupfilter function='member' level='[none:direction:nk]' member='&quot;S&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1qwg29b15x37tr1aiot430jutmxo].[none:direction:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1qwg29b15x37tr1aiot430jutmxo].[none:ref_time:nk]' value='-90' />
+            <format attr='text-format' field='[federated.1qwg29b15x37tr1aiot430jutmxo].[med:return:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.1qwg29b15x37tr1aiot430jutmxo].[none:ref_time:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1qwg29b15x37tr1aiot430jutmxo].[med:return:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1qwg29b15x37tr1aiot430jutmxo].[med:return:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1qwg29b15x37tr1aiot430jutmxo].[med:return:qk]</rows>
+        <cols>([federated.1qwg29b15x37tr1aiot430jutmxo].[none:is_control:nk] / [federated.1qwg29b15x37tr1aiot430jutmxo].[none:ref_time:nk])</cols>
+      </table>
+      <simple-id uuid='{39789715-8B05-411B-BAFF-2D9388C52BF4}' />
+    </worksheet>
+    <worksheet name='Stock perf (sell) (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Stock Price Performance during and after Insider </run>
+            <run underline='true'>Buy</run>
+            <run> (n=45)&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stock_prices' name='federated.1qwg29b15x37tr1aiot430jutmxo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qwg29b15x37tr1aiot430jutmxo'>
+            <column caption='Direction' datatype='string' name='[direction]' role='dimension' type='nominal' />
+            <column caption='Is Control' datatype='boolean' name='[is_control]' role='dimension' type='nominal' />
+            <column-instance column='[return]' derivation='Median' name='[med:return:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[direction]' derivation='None' name='[none:direction:nk]' pivot='key' type='nominal' />
+            <column-instance column='[is_control]' derivation='None' name='[none:is_control:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ref_time]' derivation='None' name='[none:ref_time:nk]' pivot='key' type='nominal' />
+            <column caption='Ref Time' datatype='string' name='[ref_time]' role='dimension' type='nominal' />
+            <column caption='Return' datatype='real' name='[return]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qwg29b15x37tr1aiot430jutmxo].[none:direction:nk]'>
+            <groupfilter function='member' level='[none:direction:nk]' member='&quot;P&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1qwg29b15x37tr1aiot430jutmxo].[none:direction:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1qwg29b15x37tr1aiot430jutmxo].[none:ref_time:nk]' value='-90' />
+            <format attr='text-format' field='[federated.1qwg29b15x37tr1aiot430jutmxo].[med:return:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.1qwg29b15x37tr1aiot430jutmxo].[none:ref_time:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1qwg29b15x37tr1aiot430jutmxo].[med:return:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1qwg29b15x37tr1aiot430jutmxo].[med:return:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1qwg29b15x37tr1aiot430jutmxo].[med:return:qk]</rows>
+        <cols>([federated.1qwg29b15x37tr1aiot430jutmxo].[none:is_control:nk] / [federated.1qwg29b15x37tr1aiot430jutmxo].[none:ref_time:nk])</cols>
+      </table>
+      <simple-id uuid='{23E3096D-BF9D-44C4-BCEE-94B0C83699DC}' />
+    </worksheet>
+    <worksheet name='Stock perf (sell) (4)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Distribution of Returns on Publication Date (t+2)
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stock_prices' name='federated.1qwg29b15x37tr1aiot430jutmxo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qwg29b15x37tr1aiot430jutmxo'>
+            <column caption='Direction' datatype='string' name='[direction]' role='dimension' type='nominal' />
+            <column caption='Is Control' datatype='boolean' name='[is_control]' role='dimension' type='nominal' />
+            <column-instance column='[direction]' derivation='None' name='[none:direction:nk]' pivot='key' type='nominal' />
+            <column-instance column='[is_control]' derivation='None' name='[none:is_control:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ref_time]' derivation='None' name='[none:ref_time:nk]' pivot='key' type='nominal' />
+            <column-instance column='[return]' derivation='None' name='[none:return:qk]' pivot='key' type='quantitative' />
+            <column caption='Ref Time' datatype='string' name='[ref_time]' role='dimension' type='nominal' />
+            <column caption='Return' datatype='real' name='[return]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qwg29b15x37tr1aiot430jutmxo].[none:direction:nk]'>
+            <groupfilter function='member' level='[none:direction:nk]' member='&quot;S&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1qwg29b15x37tr1aiot430jutmxo].[none:is_control:nk]'>
+            <groupfilter function='member' level='[none:is_control:nk]' member='false' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1qwg29b15x37tr1aiot430jutmxo].[none:ref_time:nk]'>
+            <groupfilter function='member' level='[none:ref_time:nk]' member='&quot;rTime_2&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1qwg29b15x37tr1aiot430jutmxo].[none:direction:nk]</column>
+            <column>[federated.1qwg29b15x37tr1aiot430jutmxo].[none:ref_time:nk]</column>
+            <column>[federated.1qwg29b15x37tr1aiot430jutmxo].[none:is_control:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='160' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1qwg29b15x37tr1aiot430jutmxo].[none:ref_time:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1qwg29b15x37tr1aiot430jutmxo].[none:return:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1qwg29b15x37tr1aiot430jutmxo].[none:return:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.053977899253368378' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1qwg29b15x37tr1aiot430jutmxo].[none:return:qk]</cols>
+      </table>
+      <simple-id uuid='{0E7E62CB-B566-4CF9-857D-29FDD55ACC02}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='30'>
+    <window class='worksheet' maximized='true' name='Stock perf (sell)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='32'>
+            <card type='columns' />
+          </strip>
+          <strip size='32'>
+            <card type='rows' />
+          </strip>
+          <strip size='32'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0282B8D4-AF41-48CA-AB96-8DC5DB4F363D}' />
+    </window>
+    <window class='worksheet' name='Stock perf (sell) (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='32'>
+            <card type='columns' />
+          </strip>
+          <strip size='32'>
+            <card type='rows' />
+          </strip>
+          <strip size='32'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{854C661A-D05C-48B8-9505-69D797368236}' />
+    </window>
+    <window class='worksheet' name='Stock perf (sell) (4)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BF557217-F9BD-4103-8D03-71B9D8CD56AA}' />
+    </window>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='32'>
+            <card type='columns' />
+          </strip>
+          <strip size='32'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{75FC52AA-37D7-4011-8D19-F7B3634BE9D4}' />
+    </window>
+  </windows>
+</workbook>
